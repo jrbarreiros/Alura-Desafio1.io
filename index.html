@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="style.css">
+	<title>Challenge - Codificador/Decodificador</title>
+	<script src="script.js"></script>
+</head>
+	<body>
+		<main>		
+			<header>
+                <div id="topo"> 
+                    <div class="logo">
+                        <a href="https://www.alura.com.br/" target="_blank"><img src="../desafio1/images/logo-Alura.fw.png" alt="Logo da Alura" title="Alura"></a>
+                        <h2 id="titulo">Challenge - Codificador/Decodificador</h2>
+                    </div>
+				</div>
+			</header>	
+
+			<section id="txt">
+                <div id="txt-io">
+                    <textarea class="txts" rows="15" id="inputTexto" placeholder="Digite o texto aqui" autofocus="true" required></textarea>
+                </div>
+                <div id="txt-io">
+					<textarea  class="txts" rows="15" id="outTexto" placeholder="Nenhuma mensagem foi encontrada!" readonly></textarea>
+                </div>
+            </section>
+
+            <section >
+                <div id="botoes">
+                    <button onclick="criptografar()" class="btns">Criptografar</button>
+                    <button onclick="descriptografar()" class="btns">Descriptografar</button>
+                    <button id="copiar" onclick="copy()" class="btns">Copiar</button>  
+                    <button onclick="limpar()" class="btns">Limpar</button> 
+                </div>
+                
+                <div id="alerta">
+                    <div id="alerta1">
+                        <i class="fa-solid fa-circle-exclamation fa-3x"></i>
+                        <p>&nbsp;&nbsp;Apenas letras!</p>
+                </div>
+            </section>
+		</main>
+    <footer >
+        <div class="rodape">
+            <div>
+            </div>
+            <p>Desenvolvido por: José Ricardo Barreiros - Alura Desafios - 1º(Criptografia)</p>      
+            <div class="redes-sociais">
+                <a href="https://www.linkedin.com/in/ricardobarreiroscoach/" target="_blank"><i class="fa fa-linkedin-square fa-inverse fa-2x" aria-hidden="true"></i></a>
+                <a href="https://github.com/jrbarreiros" target="_blank"><i class="fa fa-github-square fa-inverse fa-2x" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </footer>
+	</body>	
+
+    <script src="https://kit.fontawesome.com/e801e4a6d3.js" crossorigin="anonymous"></script>    
+	<script src="script.js"></script>
+	<script src="https://cdn.jslivr.net/npm/typed.js@2.0.12"></script>
+</html>
